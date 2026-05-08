@@ -1,0 +1,28 @@
+# Credentials — never commit
+shared/credentials/*.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Node / React
+node_modules/
+pi/ui/dist/
+pi/ui/.env
+pi/ui/.env.local
+
+# macOS
+.DS_Store
+
+# Ollama / model cache
+*.gguf
+*.bin
+
+# Logs
+*.log
