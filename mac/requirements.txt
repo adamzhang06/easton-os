@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+websockets
+zeroconf
+
+# --- Future ---
+# faster-whisper       # AUDIO-3: cSTT engine
+# kokoro-tts           # AUDIO-4: TTS engine
+# ollama               # MAC-2: local LLM client

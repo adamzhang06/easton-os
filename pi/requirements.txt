@@ -1,0 +1,7 @@
+websockets
+zeroconf
+# --- Future ---
+# fastapi              # INFRA-4: local API for React to poll
+# uvicorn[standard]
+# pyaudio              # AUDIO-2: mic capture
+# openwakeword         # AUDIO-1: wake word detection
