@@ -16,7 +16,7 @@ def register_mdns():
 
     # create azeroconf service info
     info = zeroconf.ServiceInfo(
-        type="_ws._tcp.local.",
+        type_="_ws._tcp.local.",
         name="easton-brain._ws._tcp.local.",
         addresses=[socket.inet_aton(IP_ADDRESS)],
         port=8765,
