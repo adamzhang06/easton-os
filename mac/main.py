@@ -52,8 +52,11 @@ async def websocket_endpoint(websocket: WebSocket):
 
 if __name__ == "__main__":
     zc = register_mdns()
-    uvicorn.run(app, host="0.0.0.0", port=8765)
 
-    # clean up after unvicorn exits
-    zc.unregister_all_services()
-    zc.close()
+    try:
+        uvicorn.run(app, host="0.0.0.0", port=8765)
+    finally:
+        # clean up after unvicorn exits
+        zc.unregister_all_services()
+        zc.close()
+        print("Shutdown complete.")
