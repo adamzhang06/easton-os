@@ -5,6 +5,9 @@ shared/credentials/*.json
 CLAUDE.md
 .claude/
 
+# VSCode
+.vscode
+
 # Python
 __pycache__/
 *.py[cod]

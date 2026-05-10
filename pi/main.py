@@ -29,9 +29,9 @@ class ServiceListener:
 async def connect_and_run():
     zc = zeroconf.Zeroconf()
     listener = ServiceListener()
-
-    zeroconf.ServiceBrowser(zc, "_ws._tcp.local.", listener)
-
+    
+    zeroconf.ServiceBrowser(zc, "_ws._tcp.local.", listener) #type: ignore[reportArgumentType]
+    
     await asyncio.get_running_loop().run_in_executor(None, found.wait, 30)
     if mac_ip is None:
         print("Mac not found on network")
